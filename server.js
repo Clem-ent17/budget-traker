@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 //helps compress files to local
 const compression = require("compression");
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
